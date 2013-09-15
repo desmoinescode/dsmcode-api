@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/desmoinescode/dsmcode-api.png?branch=master)](https://travis-ci.org/desmoinescode/dsmcode-api)
+[![Dependency Status](https://gemnasium.com/desmoinescode/dsmcode-api.png)](https://gemnasium.com/desmoinescode/dsmcode-api)
+
+
 # Environment Setup
 
     bundle install
