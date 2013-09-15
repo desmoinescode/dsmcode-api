@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript">
+    $.ajax({
+      url: "http://localhost:3000/groups",
+      type: "get",
+      dataType: "json",
+      success: function(resp){
+        console.log(resp);
+      }
+    });
+  </script>
+</body>
+</html>
