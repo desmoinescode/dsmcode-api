@@ -7,8 +7,24 @@ class GroupsControllerTest < ActionController::TestCase
     assert_response :success
     json_groups = JSON.parse(@response.body)
     assert_equal [
-      JSON.parse(groups(:two).to_json),
-      JSON.parse(groups(:one).to_json),
+      {
+        'id' => groups(:two).id,
+        'name' => 'GroupTwo',
+        'website' => 'www.two.com',
+        'twitter_handle' => 'two_twit',
+        'google_group' => 'two_grp',
+        'facebook' => 'two_fb',
+        'tweets' => [tweets(:three).id, tweets(:four).id]
+      },
+      {
+        'id' => groups(:one).id,
+        'name' => 'GroupOne',
+        'website' => 'www.one.com',
+        'twitter_handle' => 'one_twit',
+        'google_group' => 'one_grp',
+        'facebook' => 'one_fb',
+        'tweets' => [tweets(:two).id, tweets(:one).id]
+      },
     ], json_groups
   end
 
@@ -16,7 +32,15 @@ class GroupsControllerTest < ActionController::TestCase
     get :show, id: groups(:one)
     assert_response :success
     json_group = JSON.parse(@response.body)
-    assert_equal JSON.parse(groups(:one).to_json), json_group
+    assert_equal json_group, {
+      'id' => groups(:one).id,
+      'name' => 'GroupOne',
+      'website' => 'www.one.com',
+      'twitter_handle' => 'one_twit',
+      'google_group' => 'one_grp',
+      'facebook' => 'one_fb',
+      'tweets' => [tweets(:two).id, tweets(:one).id]
+    }
   end
 
 end

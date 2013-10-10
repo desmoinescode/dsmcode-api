@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  content: One
+  group: one
+
+two:
+  content: Two 
+  group: one
+
+three:
+  content: Three 
+  group: two
+
+four:
+  content: Four 
+  group: two

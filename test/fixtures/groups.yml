@@ -1,15 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  name: MyString
-  website: MyString
-  twitter_handle: MyString
-  google_group: MyString
-  facebook: MyString
+  name: GroupOne
+  website: www.one.com
+  twitter_handle: one_twit
+  google_group: one_grp
+  facebook: one_fb
 
 two:
-  name: MyString
-  website: MyString
-  twitter_handle: MyString
-  google_group: MyString
-  facebook: MyString
+  name: GroupTwo
+  website: www.two.com
+  twitter_handle: two_twit
+  google_group: two_grp
+  facebook: two_fb
