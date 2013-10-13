@@ -7,11 +7,11 @@ class TweetsControllerTest < ActionController::TestCase
     assert_response :success
     assert_equal JSON.parse(@response.body), [
       {
-        'id' => groups(:two).id,
+        'id' => tweets(:two).id,
         'content' =>  'Two',
       },
       {
-        'id' => groups(:one).id,
+        'id' => tweets(:one).id,
         'content' =>  'One',
       },
     ]

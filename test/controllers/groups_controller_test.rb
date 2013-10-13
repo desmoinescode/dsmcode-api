@@ -14,7 +14,8 @@ class GroupsControllerTest < ActionController::TestCase
         'twitter_handle' => 'two_twit',
         'google_group' => 'two_grp',
         'facebook' => 'two_fb',
-        'tweets' => [tweets(:three).id, tweets(:four).id]
+        'tweets' => [tweets(:three).id, tweets(:four).id],
+        'posts' => [posts(:three).id, posts(:four).id]
       },
       {
         'id' => groups(:one).id,
@@ -23,7 +24,8 @@ class GroupsControllerTest < ActionController::TestCase
         'twitter_handle' => 'one_twit',
         'google_group' => 'one_grp',
         'facebook' => 'one_fb',
-        'tweets' => [tweets(:two).id, tweets(:one).id]
+        'tweets' => [tweets(:two).id, tweets(:one).id],
+        'posts' => [posts(:two).id, posts(:one).id]
       },
     ], json_groups
   end
@@ -39,7 +41,8 @@ class GroupsControllerTest < ActionController::TestCase
       'twitter_handle' => 'one_twit',
       'google_group' => 'one_grp',
       'facebook' => 'one_fb',
-      'tweets' => [tweets(:two).id, tweets(:one).id]
+      'tweets' => [tweets(:two).id, tweets(:one).id],
+      'posts' => [posts(:two).id, posts(:one).id]
     }
   end
 
