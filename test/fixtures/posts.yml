@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: 'Title One'
+  group: one
+
+two:
+  title: 'Title Two'
+  group: one
+
+three:
+  title: 'Title Three'
+  group: two
+
+four:
+  title: 'Title Four'
+  group: two
